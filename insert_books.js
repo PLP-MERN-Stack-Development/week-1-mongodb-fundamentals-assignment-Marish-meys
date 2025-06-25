@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // insert_books.js - Script to populate MongoDB with sample book data
 
 // Import MongoDB client
@@ -196,3 +197,30 @@ insertBooks().catch(console.error);
  * 5. Find in-stock books:
  *    db.books.find({ in_stock: true })
  */ 
+=======
+use('plp_bookstore');
+
+db.books.insertMany([
+  {
+    title: "The Alchemist",
+    author: "Paulo Coelho",
+    genre: "Fiction",
+    published_year: 1988,
+    price: 12.99,
+    in_stock: true,
+    pages: 208,
+    publisher: "HarperOne"
+  },
+  {
+    title: "Clean Code",
+    author: "Robert C. Martin",
+    genre: "Programming",
+    published_year: 2008,
+    price: 34.95,
+    in_stock: true,
+    pages: 464,
+    publisher: "Prentice Hall"
+  },
+  // Add 8 more book objects here...
+]);
+>>>>>>> f840f2e (firt commit)
