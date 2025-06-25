@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // insert_books.js - Script to populate MongoDB with sample book data
 
 // Import MongoDB client
@@ -197,7 +197,6 @@ insertBooks().catch(console.error);
  * 5. Find in-stock books:
  *    db.books.find({ in_stock: true })
  */ 
-=======
 use('plp_bookstore');
 
 db.books.insertMany([
@@ -223,4 +222,3 @@ db.books.insertMany([
   },
   // Add 8 more book objects here...
 ]);
->>>>>>> f840f2e (firt commit)
